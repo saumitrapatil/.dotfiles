@@ -6,6 +6,7 @@ sie() {
 }
 
 foreach file (
+	options.zsh
 	prompt.zsh
 	aliases.zsh
 	plugins.zsh
