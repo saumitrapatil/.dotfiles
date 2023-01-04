@@ -176,3 +176,5 @@ super + shift + f
 	librewolf --private-window
 super + shift + d
 	discord-ptb
+super + shift + e
+	/usr/bin/emacsclient --alternate-editor= --create-frame

@@ -9,6 +9,7 @@ $HOME/.config/polybar/launch.sh
 warpd &
 mpDris2 &
 clipmenud &
+emacs --daemon &
 
 # Mouse, Trackpad & Keyboard
 xmodmap -e 'keycode 172=' &
