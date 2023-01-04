@@ -35,10 +35,11 @@ else
       -pix_fmt yuv420p \
       -crf 20          \
       "$dir/$current.mp4" 
-
+	echo "recording saved"
     # dunstify 'File saved in $HOME/Videos/Recordings' --icon=dialog-information -r 5555 -u normal
     # dragon-drop -x $dir/$current.mp4
   else
-  dunstify 'Selection cancled' --icon=dialog-information -r 5555 -u normal
+  echo "recording aborted"
+  # dunstify 'Selection cancled' --icon=dialog-information -r 5555 -u normal
   fi
 fi
