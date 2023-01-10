@@ -1,7 +1,5 @@
 local opts = { noremap = true, silent = true }
 
-local term_opts = { silent = true }
-
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
 
@@ -9,7 +7,6 @@ local keymap = vim.api.nvim_set_keymap
 keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
-
 
 -- Normal --
 -- Navigation between windows
@@ -24,7 +21,7 @@ keymap("n", "<C-Down>", ":resize -2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
--- To enter normal mode press jk fast
+-- To enter normal mode faster
 keymap("i", "kj", "<ESC>", opts)
 
 -- Visual --
@@ -49,8 +46,8 @@ keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
 -- Bufferline --
-keymap("n", "<leader>k", ":BufferLinePick<cr>", opts)
-keymap("n", "<leader>x", ":BufferLinePickClose<cr>", opts)
+keymap("n", "<leader>x", ":BufferLinePick<cr>", opts)
+keymap("n", "<leader>bk", ":BufferLinePickClose<cr>", opts)
 -- move between buffers
 keymap("n", "<leader>1", ":BufferLineGoToBuffer1<cr>", opts)
 keymap("n", "<leader>2", ":BufferLineGoToBuffer2<cr>", opts)
