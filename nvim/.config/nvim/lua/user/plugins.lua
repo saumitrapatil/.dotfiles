@@ -35,7 +35,7 @@ return packer.startup(function(use)
 	use("RRethy/vim-illuminate") -- highlights other uses of the word
 
 	-- Colorscheme
-	use({ "catppuccin/nvim", as = "catppuccin" })
+	use('folke/tokyonight.nvim')
 
 	-- Completetions
 	use("hrsh7th/cmp-buffer")

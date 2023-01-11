@@ -9,7 +9,7 @@ export CM_DEBUG=1
 export CM_OUTPUT_CLIP=0
 export CM_MAX_CLIPS=10
 export CM_HISTLENGTH=10
-export PATH=/home/saumitra/.local/bin:/home/saumitra/.cargo/bin:~/.emacs.d/bin:$PATH
+export PATH=/home/saumitra/.spicetify:/home/saumitra/.local/bin:/home/saumitra/.cargo/bin:~/.emacs.d/bin:$PATH
 
 # options
 setopt nobeep
