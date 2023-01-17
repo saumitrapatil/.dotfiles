@@ -35,7 +35,8 @@ return packer.startup(function(use)
 	use("RRethy/vim-illuminate") -- highlights other uses of the word
 
 	-- Colorscheme
-	use('folke/tokyonight.nvim')
+	use{"catppuccin/nvim", as = "catppuccin"}
+	use("folke/tokyonight.nvim")
 
 	-- Completetions
 	use("hrsh7th/cmp-buffer")
@@ -75,10 +76,10 @@ return packer.startup(function(use)
 	use("moll/vim-bbye")
 
 	-- Lualine
-	use {
-	  'nvim-lualine/lualine.nvim',
-	  requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-	}
+	use({
+		"nvim-lualine/lualine.nvim",
+		requires = { "kyazdani42/nvim-web-devicons", opt = true },
+	})
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
