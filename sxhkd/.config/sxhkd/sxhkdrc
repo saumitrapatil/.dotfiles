@@ -178,3 +178,5 @@ super + shift + d
 	discord-ptb
 super + shift + e
 	/usr/bin/emacsclient --alternate-editor= --create-frame
+super + shift + p
+	feh --bg-fill --randomize /home/saumitra/Pictures/Wallpapers/
