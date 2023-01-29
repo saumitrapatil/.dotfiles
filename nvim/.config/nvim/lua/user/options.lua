@@ -9,6 +9,8 @@ local options = {
 	termguicolors = true, -- set term gui colors (most terminals support this)
 }
 
+vim.opt.signcolumn = "yes"
+
 for k, v in pairs(options) do
 	vim.opt[k] = v
 end
