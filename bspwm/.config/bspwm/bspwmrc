@@ -14,7 +14,7 @@ emacs --daemon &
 # Mouse, Trackpad & Keyboard
 xmodmap -e 'keycode 172=' &
 xsetroot -cursor_name left_ptr
-xinput disable 'Synaptics TM3336-001' &
+# xinput disable 'Synaptics TM3336-001' &
 xinput --set-prop 'Logitech Gaming Mouse G402' 'libinput Accel Profile Enabled' 0, 1 &
 
 pgrep -x sxhkd > /dev/null || sxhkd &
