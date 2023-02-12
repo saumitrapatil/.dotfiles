@@ -14,11 +14,11 @@ bufferline.setup({
 		-- and so changing this is NOT recommended, this is intended
 		-- as an escape hatch for people who cannot bear it for whatever reason
 		indicator_icon = nil,
-		indicator = { style = "icon", icon = "" },
-		--[[ buffer_close_icon = "", ]]
-		buffer_close_icon = "",
-		modified_icon = "●",
-		close_icon = "",
+		--[[ indicator = { style = "icon", icon = "" }, ]]
+		buffer_close_icon = " ",
+		--[[ buffer_close_icon = "", ]]
+		modified_icon = " ●",
+		close_icon = "",
 		-- close_icon = '',
 		left_trunc_marker = "",
 		right_trunc_marker = "",
@@ -56,7 +56,7 @@ bufferline.setup({
 		--     return true
 		--   end
 		-- end,
-		offsets = { { filetype = "NvimTree", text = "NvimTree", text_align="center", padding = 1 } },
+		offsets = { { filetype = "NvimTree", text = "NvimTree", text_align = "center", padding = 1 } },
 		show_buffer_icons = true,
 		show_buffer_close_icons = true,
 		show_close_icon = true,
@@ -85,7 +85,7 @@ bufferline.setup({
 		buffer_selected = {
 			fg = { attribute = "fg", highlight = "#ff0000" },
 			bg = { attribute = "bg", highlight = "#0000ff" },
-			underline = true,
+			--[[ underline = true, ]]
 		},
 		buffer_visible = {
 			fg = { attribute = "fg", highlight = "TabLine" },
@@ -166,3 +166,29 @@ bufferline.setup({
 		},
 	},
 })
+
+--[[ local function range(start, finish) ]]
+--[[ 	local result = {} ]]
+--[[ 	for i = start, finish do ]]
+--[[ 		table.insert(result, i) ]]
+--[[ 	end ]]
+--[[ 	return result ]]
+--[[ end ]]
+--[[]]
+--[[ local function buflisted(val) ]]
+--[[ 	return vim.fn.buflisted(val) ]]
+--[[ end ]]
+--[[]]
+--[[ local buffer_numbers = range(1, vim.fn.bufnr("$")) ]]
+--[[ local filtered_buffer_numbers = vim.fn.filter(buffer_numbers, buflisted) ]]
+--[[]]
+--[[ local function snhtabline() ]]
+--[[ 	if #filtered_buffer_numbers == 1 then ]]
+--[[ 		vim.api.nvim_command(":set showtabline=0") ]]
+--[[ 	elseif #filtered_buffer_numbers > 1 then ]]
+--[[ 		vim.api.nvim_command(":set showtabline=2") ]]
+--[[ 	end ]]
+--[[ end ]]
+
+-- vim.cmd[[autocmd BufEnter * lua snhtabline]]
+-- vim.cmd[[autocmd BufLeave * lua snhtabline]]

@@ -1,5 +1,3 @@
-local fn = vim.fn
-
 -- Autocommand that reloads neovim whenever you save the plugins.lua file
 vim.cmd([[
   augroup packer_user_config
@@ -33,11 +31,12 @@ return packer.startup(function(use)
 	use("lewis6991/impatient.nvim") -- reduces loading time of vim
 	use("lukas-reineke/indent-blankline.nvim") -- indentation guide lines
 	use("RRethy/vim-illuminate") -- highlights other uses of the word
+	use("rcarriga/nvim-notify") -- notification manager
 
 	-- Colorscheme
 	use({ "catppuccin/nvim", as = "catppuccin" })
 	use("folke/tokyonight.nvim")
-	use("marko-cerovac/material.nvim")
+	use("lunarvim/horizon.nvim")
 
 	-- Completetions
 	use("hrsh7th/cmp-buffer")
@@ -82,8 +81,15 @@ return packer.startup(function(use)
 		requires = { "kyazdani42/nvim-web-devicons", opt = true },
 	})
 
-	-- Winbar
-	use("fgheng/winbar.nvim")
+	-- Barbecue
+	use({
+		"utilyre/barbecue.nvim",
+		tag = "*",
+		requires = {
+			"SmiteshP/nvim-navic",
+			"nvim-tree/nvim-web-devicons", -- optional dependency
+		},
+	})
 	use({
 		"SmiteshP/nvim-navic",
 		requires = "neovim/nvim-lspconfig",
@@ -95,6 +101,9 @@ return packer.startup(function(use)
 
 	-- Discord RPC
 	use("andweeb/presence.nvim")
+
+	-- Transparency
+	use("xiyaowong/nvim-transparent")
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

@@ -57,3 +57,6 @@ keymap("n", "<leader>5", ":BufferLineGoToBuffer5<cr>", opts)
 keymap("n", "<leader>6", ":BufferLineGoToBuffer6<cr>", opts)
 keymap("n", "<leader>7", ":BufferLineGoToBuffer7<cr>", opts)
 keymap("n", "<leader>8", ":BufferLineGoToBuffer8<cr>", opts)
+
+-- Transparency
+keymap("n", "<leader>t", ":TransparentToggle<cr>", opts)

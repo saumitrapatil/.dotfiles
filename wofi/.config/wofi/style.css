@@ -24,7 +24,7 @@ window {
 #inner-box {
     margin: 2px;
     border: 0px solid;
-    background-color: @clear;
+    background-color: #00000000;
     border-radius: 8px;
 }
 

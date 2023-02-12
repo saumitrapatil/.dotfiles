@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["barbecue.nvim"] = {
+    loaded = true,
+    path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/barbecue.nvim",
+    url = "https://github.com/utilyre/barbecue.nvim"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
@@ -134,6 +139,11 @@ _G.packer_plugins = {
     path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["horizon.nvim"] = {
+    loaded = true,
+    path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/horizon.nvim",
+    url = "https://github.com/lunarvim/horizon.nvim"
+  },
   ["impatient.nvim"] = {
     loaded = true,
     path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/impatient.nvim",
@@ -158,11 +168,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
-  },
-  ["material.nvim"] = {
-    loaded = true,
-    path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/material.nvim",
-    url = "https://github.com/marko-cerovac/material.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -198,6 +203,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/nvim-navic",
     url = "https://github.com/SmiteshP/nvim-navic"
+  },
+  ["nvim-notify"] = {
+    loaded = true,
+    path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/nvim-notify",
+    url = "https://github.com/rcarriga/nvim-notify"
+  },
+  ["nvim-transparent"] = {
+    loaded = true,
+    path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/nvim-transparent",
+    url = "https://github.com/xiyaowong/nvim-transparent"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -258,11 +273,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/vim-illuminate",
     url = "https://github.com/RRethy/vim-illuminate"
-  },
-  ["winbar.nvim"] = {
-    loaded = true,
-    path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/winbar.nvim",
-    url = "https://github.com/fgheng/winbar.nvim"
   }
 }
 
