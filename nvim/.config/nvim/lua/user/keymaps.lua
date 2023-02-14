@@ -60,3 +60,6 @@ keymap("n", "<leader>8", ":BufferLineGoToBuffer8<cr>", opts)
 
 -- Transparency
 keymap("n", "<leader>t", ":TransparentToggle<cr>", opts)
+
+-- File Saving
+keymap("n", "<leader>s", ":w<cr>", opts)
