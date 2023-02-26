@@ -123,7 +123,7 @@ super + {Left,Down,Up,Right}
 
 # pcmanfm
 super + e
-	pcmanfm
+	thunar
 
 # screenshot via flameshot
 super + shift + s

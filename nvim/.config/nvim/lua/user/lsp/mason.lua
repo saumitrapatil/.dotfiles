@@ -3,8 +3,8 @@ local servers = {
 	"pyright",
 	"cssls",
 	"html",
+	"vtsls",
 	"bashls",
-	"tailwindcss",
 	"clangd",
 }
 
