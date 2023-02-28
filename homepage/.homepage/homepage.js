@@ -19,11 +19,14 @@ setInterval(() => {
 }, 1000)
 document.addEventListener('keydown', (event) => {
 	// Focus search box on pressing i
-	if (event.keyCode === 73 && document.activeElement !== document.getElementById('search-field')) {
+	if (
+		event.keyCode === 73 &&
+		document.activeElement !== document.getElementById('search-field')
+	) {
 		event.preventDefault()
 		document.getElementById('search-field').focus()
 	} else if (event.keyCode === 27) {
-		// Esc to
+		// Esc to unfocus from the search box
 		document.getElementById('search-field').value = ''
 		document.getElementById('search-field').blur()
 	}
