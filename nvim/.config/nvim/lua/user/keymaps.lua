@@ -16,22 +16,25 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- Resize with arrows
-keymap("n", "<C-Up>", ":resize +2<CR>", opts)
-keymap("n", "<C-Down>", ":resize -2<CR>", opts)
+keymap("n", "<C-Up>", ":resize -2<CR>", opts)
+keymap("n", "<C-Down>", ":resize +2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- To enter normal mode faster
 keymap("i", "kj", "<ESC>", opts)
 
+-- Insert --
+-- Move text up and down
+keymap("i", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
+keymap("i", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
+
 -- Visual --
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
--- Move text up and down
-keymap("v", "<A-j>", ":m .+1<CR>==", opts)
-keymap("v", "<A-k>", ":m .-2<CR>==", opts)
+-- overiding text doesn't yank it
 keymap("v", "p", '"_dP', opts)
 
 -- Visual Block --
@@ -63,3 +66,9 @@ keymap("n", "<leader>t", ":TransparentToggle<cr>", opts)
 
 -- File Saving
 keymap("n", "<leader>s", ":w<cr>", opts)
+keymap("n", "<leader>q", ":q!<cr>", opts)
+keymap("n", "<leader>wq", ":wq<cr>", opts)
+keymap("n", "<leader><leader>s", ":source %<cr>", opts)
+
+-- DAP
+keymap("n", "<leader>bb", ":lua require'dap'.toggle_breakpoint()<cr>", opts)

@@ -174,6 +174,11 @@ _G.packer_plugins = {
     path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["neodev.nvim"] = {
+    loaded = true,
+    path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/neodev.nvim",
+    url = "https://github.com/folke/neodev.nvim"
+  },
   ["null-ls.nvim"] = {
     loaded = true,
     path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
@@ -194,10 +199,15 @@ _G.packer_plugins = {
     path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/nvim-dap",
     url = "https://github.com/mfussenegger/nvim-dap"
   },
-  ["nvim-dap-python"] = {
+  ["nvim-dap-ui"] = {
     loaded = true,
-    path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/nvim-dap-python",
-    url = "https://github.com/mfussenegger/nvim-dap-python"
+    path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/nvim-dap-ui",
+    url = "https://github.com/rcarriga/nvim-dap-ui"
+  },
+  ["nvim-dap-virtual-text"] = {
+    loaded = true,
+    path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/nvim-dap-virtual-text",
+    url = "https://github.com/theHamsta/nvim-dap-virtual-text"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -263,6 +273,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["toggleterm.nvim"] = {
+    loaded = true,
+    path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
   },
   ["tokyonight.nvim"] = {
     loaded = true,

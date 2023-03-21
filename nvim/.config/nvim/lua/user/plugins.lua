@@ -32,6 +32,7 @@ return packer.startup(function(use)
 	use("lukas-reineke/indent-blankline.nvim") -- indentation guide lines
 	use("RRethy/vim-illuminate") -- highlights other uses of the word
 	use("rcarriga/nvim-notify") -- notification manager
+	use("akinsho/toggleterm.nvim")
 
 	-- Colorscheme
 	use({ "catppuccin/nvim", as = "catppuccin" })
@@ -95,9 +96,11 @@ return packer.startup(function(use)
 		requires = "neovim/nvim-lspconfig",
 	})
 
-	-- Debugger
+	-- DAP(Debugger Adapter Protocol)
 	use("mfussenegger/nvim-dap")
-	use("mfussenegger/nvim-dap-python")
+	use({ "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } })
+	use("theHamsta/nvim-dap-virtual-text")
+	use("folke/neodev.nvim")
 
 	-- Discord RPC
 	use("andweeb/presence.nvim")
@@ -108,7 +111,7 @@ return packer.startup(function(use)
 	-- Markdown Preview
 	use({
 		"iamcco/markdown-preview.nvim",
-			--[[ opt = true, ]]
+		--[[ opt = true, ]]
 		run = function()
 			vim.fn["mkdp#util#install"]()
 		end,
