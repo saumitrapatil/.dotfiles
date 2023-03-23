@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["aerial.nvim"] = {
+    loaded = true,
+    path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/aerial.nvim",
+    url = "https://github.com/stevearc/aerial.nvim"
+  },
   ["barbecue.nvim"] = {
     loaded = true,
     path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/barbecue.nvim",
@@ -288,6 +293,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
+  },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
   },
   ["vim-illuminate"] = {
     loaded = true,

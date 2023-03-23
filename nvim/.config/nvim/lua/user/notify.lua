@@ -4,8 +4,8 @@ if not status_ok then
 end
 
 notify.setup({
-	stages = 'slide',
-	timeout = 3000
+	stages = "slide",
+	timeout = 3000,
 })
 
 vim.notify = require("notify")

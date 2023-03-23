@@ -72,3 +72,6 @@ keymap("n", "<leader><leader>s", ":source %<cr>", opts)
 
 -- DAP
 keymap("n", "<leader>bb", ":lua require'dap'.toggle_breakpoint()<cr>", opts)
+
+-- Aerial
+keymap("n", "<leader>a", ":AerialToggle<CR>", opts)

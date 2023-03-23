@@ -9,6 +9,6 @@ catppuccin.setup({
 		indent_blankline = {
 			enabled = true,
 			colored_indent_levels = true,
-		}
-	}
+		},
+	},
 })

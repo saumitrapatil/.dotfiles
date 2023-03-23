@@ -33,6 +33,8 @@ return packer.startup(function(use)
 	use("RRethy/vim-illuminate") -- highlights other uses of the word
 	use("rcarriga/nvim-notify") -- notification manager
 	use("akinsho/toggleterm.nvim")
+	use("tpope/vim-fugitive")
+	use("stevearc/aerial.nvim")
 
 	-- Colorscheme
 	use({ "catppuccin/nvim", as = "catppuccin" })
@@ -66,7 +68,7 @@ return packer.startup(function(use)
 	use("nvim-tree/nvim-tree.lua")
 
 	-- Treesitter
-	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdateSync" })
+	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 	use("JoosepAlviste/nvim-ts-context-commentstring")
 
 	-- Git
