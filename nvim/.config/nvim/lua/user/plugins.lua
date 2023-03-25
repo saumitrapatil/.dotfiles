@@ -35,6 +35,7 @@ return packer.startup(function(use)
 	use("akinsho/toggleterm.nvim")
 	use("tpope/vim-fugitive")
 	use("stevearc/aerial.nvim")
+	use("NvChad/nvim-colorizer.lua")
 
 	-- Colorscheme
 	use({ "catppuccin/nvim", as = "catppuccin" })
