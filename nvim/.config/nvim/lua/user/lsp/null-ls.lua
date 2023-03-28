@@ -14,7 +14,7 @@ null_ls.setup({
 		formatting.prettier.with({
 			extra_args = { "--use-tabs", "--tab-width 4", "--no-semi", "--single-quote", "--jsx-single-quote" },
 			filetypes = {
-				"jsonc",
+				"json",
 				"toml",
 				"javascript",
 				"javascriptreact",

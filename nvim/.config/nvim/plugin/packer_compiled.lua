@@ -308,6 +308,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/vim-illuminate",
     url = "https://github.com/RRethy/vim-illuminate"
+  },
+  ["vim-wakatime"] = {
+    loaded = true,
+    path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/vim-wakatime",
+    url = "https://github.com/wakatime/vim-wakatime"
   }
 }
 
