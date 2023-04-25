@@ -10,7 +10,16 @@ end
 
 local tree_cb = nvim_tree_config.nvim_tree_callback
 
+local function on_attach(bufnr)
+	local api = require("nvim-tree.api")
+
+	local function opts(desc)
+		return { desc = "nvim-tree: " .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
+	end
+end
+
 nvim_tree.setup({
+	on_attach = on_attach,
 	sort_by = "name",
 	update_focused_file = {
 		enable = true,

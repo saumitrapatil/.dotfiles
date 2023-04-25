@@ -6,6 +6,7 @@ local servers = {
 	"vtsls",
 	"bashls",
 	"clangd",
+	"arduino_language_server",
 }
 
 local settings = {

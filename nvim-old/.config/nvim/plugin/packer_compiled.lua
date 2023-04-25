@@ -294,6 +294,11 @@ _G.packer_plugins = {
     path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
   },
+  ["vim-arduino-syntax"] = {
+    loaded = true,
+    path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/vim-arduino-syntax",
+    url = "https://github.com/sudar/vim-arduino-syntax"
+  },
   ["vim-bbye"] = {
     loaded = true,
     path = "/home/saumitra/.local/share/nvim/site/pack/packer/start/vim-bbye",
