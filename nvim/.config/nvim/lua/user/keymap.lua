@@ -45,3 +45,7 @@ keymap("v", "p", '"_dP', opts)
 -- Move text up and down
 keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
+
+-- Plugins --
+-- NeoTree
+keymap("n", "<leader>e", ":NeoTreeFocusToggle<cr>", opts)

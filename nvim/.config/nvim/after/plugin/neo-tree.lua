@@ -83,6 +83,7 @@ neo_tree.setup({
         mappings = {
             ["<2-LeftMouse>"] = "open",
             ["<cr>"] = "open",
+            ["l"] = "open",
             ["P"] = { "toggle_preview", config = { use_float = true } },
             ["<esc>"] = "revert_preview",
             ["h"] = "open_split",

@@ -31,6 +31,13 @@ end)
 
 lsp.setup()
 
+vim.diagnostic.config({
+    virtual_text = {
+        spacing = 4,
+        severity = "Error"
+    }
+})
+
 ----------------------------------------
 ---------------CMP CONFIG---------------
 ----------------------------------------
