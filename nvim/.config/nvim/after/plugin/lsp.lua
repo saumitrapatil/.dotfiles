@@ -1,5 +1,19 @@
 local lsp = require('lsp-zero')
 
+lsp.configure('gopls', {
+    cmd = { "gopls" },
+    filetypes = { "go", "gomod", "gowork", "gotmpl" },
+    settings = {
+        gopls = {
+            completeUnimported = true,
+            usePlaceholders = true,
+            analyses = {
+                unusedparams = true,
+            },
+        },
+    },
+})
+
 lsp.preset('recommended')
 
 lsp.ensure_installed({
@@ -122,9 +136,9 @@ cmp.setup({
         end,
     },
     sources = {
+        { name = "luasnip" },
         { name = "nvim_lsp" },
         { name = "nvim_lua" },
-        { name = "luasnip" },
         { name = "buffer" },
         { name = "path" },
     },

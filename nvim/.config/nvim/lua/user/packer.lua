@@ -55,5 +55,11 @@ return packer.startup(function(use)
             "MunifTanjim/nui.nvim",
         }
     }
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
+    use("akinsho/toggleterm.nvim")
     use("xiyaowong/transparent.nvim")
+    use("numToStr/Comment.nvim")
 end)

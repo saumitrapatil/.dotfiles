@@ -7,7 +7,7 @@ super + Return
 	kitty
 
 # program launcher
-super + @space
+super + BackSpace
 	rofi -theme ~/.config/rofi/list_purple.rasi -show drun
 
 
@@ -134,8 +134,12 @@ Print
 # volume control
 super + F3
 	pamixer -i 5
+XF86AudioForward
+	pamixer -i 2
 super + F2
 	pamixer -d 5
+XF86AudioRewind
+	pamixer -d 2
 super + F1
 	pamixer -t
 
@@ -166,13 +170,17 @@ XF86AudioPrev
 	playerctl --player spotify previous
 XF86AudioRaiseVolume
 	playerctl --player spotify volume 0.01+
+super + XF86AudioNext
+	playerctl --player spotify volume 0.01+
 XF86AudioLowerVolume
+	playerctl --player spotify volume 0.01-
+super + XF86AudioPrev
 	playerctl --player spotify volume 0.01-
 
 # application shortcuts
-super + shift + n
+super + shift + g
 	chromium --incognito
-super + shift + f
+super + shift  + f
 	librewolf --private-window
 super + shift + d
 	discord-ptb

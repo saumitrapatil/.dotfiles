@@ -10,7 +10,7 @@ vim.g.mapleader = " "
 keymap("n", "<leader>s", ":w<cr>", opts)
 keymap("n", "<leader>wq", ":wq<cr>", opts)
 keymap("n", "<leader>q", ":q!<cr>", opts)
-keymap("n", "<leader><leader>s", ":source %<cr>", opts)
+keymap("n", "<leader>xs", ":source %<cr>", opts)
 
 -- Normal --
 -- Navigation between windows
