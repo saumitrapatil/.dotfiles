@@ -1,0 +1,5 @@
+#! /bin/sh
+
+xrandr --output eDP --primary --mode 1920x1080 --rotate normal --output HDMI-1-0 --mode 2560x1080 --rate 100.00 --rotate normal --right-of eDP
+bspc monitor eDP -d 1 2 3 4 5
+bspc monitor HDMI-1-0 -d 6 7 8 9 10
