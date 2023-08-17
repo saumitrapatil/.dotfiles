@@ -83,14 +83,9 @@ function M.config()
 
 	local mappings = {
 		["a"] = { "<cmd>Alpha<cr>", "Alpha" },
-		["b"] = {
-			"<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
-			"Buffers",
-		},
 		["d"] = { "<cmd>Telescope file_browser<cr>", "File browser" },
 		["e"] = { "<cmd>Neotree focus toggle<cr>", "Explorer" },
 		["E"] = { "<cmd>Oil --float .<cr>", "Explorer" },
-		["w"] = { "<cmd>w!<CR>", "Save" },
 		["q"] = { "<cmd>q!<CR>", "Quit" },
 		["c"] = { "<cmd>bdelete!<CR>", "Close Buffer" },
 		["m"] = { "<cmd>lua _MOCP_TOGGLE()<CR>", "MOCP" },
@@ -104,7 +99,6 @@ function M.config()
 			"<cmd>lua require('telescope').extensions.projects.projects(require('telescope.themes').get_dropdown{previewer = false, initial_mode = normal})<cr>",
 			"Projects",
 		},
-		["S"] = { "<cmd>source %<cr>", "Source file" },
 		L = {
 			name = "Lazy",
 			s = { "<cmd>Lazy update<cr>", "Update" },

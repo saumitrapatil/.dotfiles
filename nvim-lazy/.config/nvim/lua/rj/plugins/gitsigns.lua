@@ -73,9 +73,9 @@ M.opts = {
 		row = 0,
 		col = 1,
 	},
-	yadm = {
-		enable = true,
-	},
+	-- yadm = {
+	-- 	enable = true,
+	-- },
 }
 
 return M

@@ -20,7 +20,7 @@
   "hop.nvim": { "branch": "v2", "commit": "90db1b2c61b820e230599a04fedcd2679e64bd07" },
   "indent-blankline.nvim": { "branch": "master", "commit": "4541d690816cb99a7fc248f1486aa87f3abce91c" },
   "lazy-reload.nvim": { "branch": "main", "commit": "5b781fbd4e5eaa4002f5bd52ceb1febf07d5ecbf" },
-  "lazy.nvim": { "branch": "main", "commit": "dac844ed617dda4f9ec85eb88e9629ad2add5e05" },
+  "lazy.nvim": { "branch": "main", "commit": "3ad55ae678876516156cca2f361c51f7952a924b" },
   "live-server.nvim": { "branch": "main", "commit": "8cae0641cabe8c555311f09dbb0ae36a513a9d5c" },
   "lualine.nvim": { "branch": "master", "commit": "45e27ca739c7be6c49e5496d14fcf45a303c3a63" },
   "luatab.nvim": { "branch": "master", "commit": "79d53c11bd77274b49b50f1d6fdb10529d7354b7" },
