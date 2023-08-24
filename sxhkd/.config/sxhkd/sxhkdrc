@@ -7,7 +7,7 @@ super + Return
 	kitty
 
 # program launcher
-super + BackSpace
+super + space
 	rofi -theme ~/.config/rofi/list_purple.rasi -show drun
 
 
@@ -140,15 +140,9 @@ Print
 # volume control
 super + F3
 	pamixer -i 5
-XF86AudioForward
-	pamixer -i 2
 super + F2
 	pamixer -d 5
-XF86AudioRewind
-	pamixer -d 2
 super + F1
-	pamixer -t
-XF86AudioMute
 	pamixer -t
 
 # brightness control
@@ -170,7 +164,7 @@ super + less
 	playerctl --player mpd previous
 
 # playerctl spotify controls
-Cancel
+XF86AudioPlay
 	playerctl --player spotify play-pause
 XF86AudioNext
 	playerctl --player spotify next
@@ -178,11 +172,7 @@ XF86AudioPrev
 	playerctl --player spotify previous
 XF86AudioRaiseVolume
 	playerctl --player spotify volume 0.01+
-super + XF86AudioForward
-	playerctl --player spotify volume 0.01+
 XF86AudioLowerVolume
-	playerctl --player spotify volume 0.01-
-super + XF86AudioRewind
 	playerctl --player spotify volume 0.01-
 
 # application shortcuts
