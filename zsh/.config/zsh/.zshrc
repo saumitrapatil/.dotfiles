@@ -7,9 +7,11 @@ sie() {
 
 foreach file (
 	options.zsh
-	prompt.zsh
+	# prompt.zsh
 	aliases.zsh
 	plugins.zsh
 ) {
   sie $ZDOTDIR/$file	
 }
+
+eval "$(starship init zsh)"

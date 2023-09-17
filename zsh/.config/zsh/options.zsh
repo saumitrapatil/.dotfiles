@@ -13,6 +13,7 @@ export GDK_BACKEND=wayland
 export QT_QPA_PLATFORM=wayland
 export PATH=/home/saumitra/.spicetify:/home/saumitra/.local/bin:/home/saumitra/.cargo/bin:~/.emacs.d/bin:/home/saumitra/bin:$PATH
 export NODE_OPTIONS=--openssl-legacy-provider
+export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
 
 # options
 setopt nobeep

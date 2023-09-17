@@ -26,6 +26,7 @@ $HOME/.config/polybar/test/launch.sh &
 #emacs --daemon &
 
 # Mouse, Trackpad & Keyboard
+# setxkbmap -option caps:swapescape &
 xsetroot -cursor_name left_ptr &
 # xinput disable 'ELAN1200:00 04F3:30BA Touchpad' &
 xinput --set-prop 'ELAN1200:00 04F3:30BA Touchpad' 'libinput Tapping Enabled' 1 &

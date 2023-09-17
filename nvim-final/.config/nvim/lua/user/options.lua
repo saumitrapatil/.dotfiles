@@ -14,7 +14,7 @@ local options = {
 	hlsearch = false,
 	incsearch = true,
 	-- Miscellaneous
-	scrolloff = 8, -- threshold for number of lines at top or bottom
+	scrolloff = 4, -- threshold for number of lines at top or bottom
 	cursorline = true, -- highlight the current line
 	termguicolors = true, -- set term gui colors (most terminals support this)
 	signcolumn = "yes",

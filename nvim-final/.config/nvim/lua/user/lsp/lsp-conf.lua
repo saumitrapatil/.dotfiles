@@ -2,6 +2,8 @@ local lspconfig = require("lspconfig")
 
 local servers = {
 	-- name of server = "name of servers executable"
+    bashls = "bash-language-server",
+    clangd = "clangd",
 	html = "vscode-html-language-server",
 	jsonls = "vscode-json-language-server",
 	tsserver = "typescript-language-server",
