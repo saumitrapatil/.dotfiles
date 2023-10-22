@@ -2,13 +2,16 @@ local lspconfig = require("lspconfig")
 
 local servers = {
 	-- name of server = "name of servers executable"
-    bashls = "bash-language-server",
-    clangd = "clangd",
+	bashls = "bash-language-server",
+	clangd = "clangd",
 	html = "vscode-html-language-server",
 	jsonls = "vscode-json-language-server",
+	cssls = "vscode-css-language-server",
 	tsserver = "typescript-language-server",
 	pyright = "pyright",
-	tailwindcss = "tailwindcss-language-server"
+	tailwindcss = "tailwindcss-language-server",
+	docker_compose_language_service = "docker-compose-langserver",
+	intelephense = "intelephense",
 }
 for k, v in pairs(servers) do
 	if vim.fn.executable(v) == 1 then

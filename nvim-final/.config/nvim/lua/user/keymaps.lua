@@ -37,6 +37,9 @@ keymap("v", ">", ">gv", opts)
 -- overiding text doesn't yank it
 keymap("v", "p", '"_dP', opts)
 
+-- copying text to clipboard
+keymap("v", "<C-c>", ":y+<CR>", opts)
+
 -- Visual Block --
 -- Move text up and down
 keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
@@ -78,3 +81,6 @@ keymap("n", "gl", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
 -- LSP
 -- formatting --
 keymap("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format{ async = true }<cr>", opts)
+
+-- Spell correction
+keymap("i", "<C-l>", "<C-g>u<Esc>[s1z=`]a<C-g>u", opts)

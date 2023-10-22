@@ -8,15 +8,15 @@ local diagnostics = null_ls.builtins.diagnostics
 require("null-ls").setup({
 	debug = false,
 	sources = {
-		formatting.prettier.with({
+		formatting.prettierd.with({
 			extra_args = { "--use-tabs", "--tab-width 4", "--no-semi", "--single-quote", "--jsx-single-quote" },
 			filetypes = {
 				"jsonc",
 				"toml",
-				-- "javascript",
-				-- "javascriptreact",
-				-- "typescript",
-				-- "typescriptreact",
+				"javascript",
+				"javascriptreact",
+				"typescript",
+				"typescriptreact",
 				"vue",
 				"css",
 				"scss",
@@ -34,6 +34,7 @@ require("null-ls").setup({
 		formatting.stylua,
 		formatting.beautysh,
 		diagnostics.zsh,
+		diagnostics.php,
 		formatting.rustfmt,
 	},
 })

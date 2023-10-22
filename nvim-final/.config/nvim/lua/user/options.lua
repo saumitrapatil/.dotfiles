@@ -9,12 +9,12 @@ local options = {
 	softtabstop = 4,
 	shiftwidth = 4,
 	tabstop = 4, -- insert two spaces for a tab(4 by default)
-	expandtab = true,
+	-- expandtab = true,
 	-- Search
 	hlsearch = false,
 	incsearch = true,
 	-- Miscellaneous
-	scrolloff = 4, -- threshold for number of lines at top or bottom
+	scrolloff = 2, -- threshold for number of lines at top or bottom
 	cursorline = true, -- highlight the current line
 	termguicolors = true, -- set term gui colors (most terminals support this)
 	signcolumn = "yes",
@@ -25,5 +25,8 @@ local options = {
 for k, v in pairs(options) do
 	vim.opt[k] = v
 end
+
+vim.cmd("setlocal spell")
+vim.cmd("set spelllang=nl,en_us")
 
 vim.g.cmp_toggle = true

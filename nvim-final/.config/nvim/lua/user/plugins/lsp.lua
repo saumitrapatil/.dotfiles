@@ -11,15 +11,15 @@ return {
 			require("user.lsp.diagnostic")
 		end,
 	},
-	-- {
-	-- 	"p00f/clangd_extensions.nvim",
-	-- 	ft = { "c", "cpp" },
-	-- 	commit = "52b7e6f1d27de19e30e0c9e492b650f934be3f5e",
-	-- 	lazy = false,
-	-- 	config = function()
-	-- 		require("user.lsp.clangd")
-	-- 	end,
-	-- },
+	{
+		"p00f/clangd_extensions.nvim",
+		ft = { "c", "cpp" },
+		commit = "52b7e6f1d27de19e30e0c9e492b650f934be3f5e",
+		lazy = false,
+		config = function()
+			require("user.lsp.clangd")
+		end,
+	},
 	{
 		"Ciel-MC/rust-tools.nvim",
 		-- branch = "inline-inlay-hints",
