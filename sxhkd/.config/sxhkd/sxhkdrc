@@ -179,7 +179,7 @@ XF86AudioLowerVolume
 super + shift + n
 	chromium --incognito
 super + shift  + f
-	librewolf --private-window
+	firefox --private-window
 super + shift + d
 	discord-ptb
 super + shift + e
