@@ -1,4 +1,5 @@
 local lspconfig = require("lspconfig")
+local util = require("lspconfig/util")
 
 local servers = {
 	-- name of server = "name of servers executable"
