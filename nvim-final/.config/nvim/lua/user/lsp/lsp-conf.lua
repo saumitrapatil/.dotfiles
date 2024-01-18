@@ -9,10 +9,8 @@ local servers = {
 	jsonls = "vscode-json-language-server",
 	cssls = "vscode-css-language-server",
 	tsserver = "typescript-language-server",
-	pyright = "pyright",
 	tailwindcss = "tailwindcss-language-server",
 	docker_compose_language_service = "docker-compose-langserver",
-	intelephense = "intelephense",
 }
 for k, v in pairs(servers) do
 	if vim.fn.executable(v) == 1 then

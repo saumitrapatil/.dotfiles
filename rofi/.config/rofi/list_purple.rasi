@@ -1,12 +1,10 @@
-
 configuration {
-    lines:							10;
+    lines:						    	10;
     columns:							1;
-    font: 							"JetBrainsMono Nerd Font 12";
-    bw: 							0;
+    bw: 						    	0;
     location: 							0;
     padding: 							0;
-    fixed-num-lines: 						true;
+    fixed-num-lines:	 					true;
     show-icons: 						false;
     sidebar-mode: 						true;
     separator-style: 						"none";
@@ -14,30 +12,25 @@ configuration {
     fullscreen: 						false;
     fake-transparency: 						false;
     scroll-method: 						0;
-    window-format: 						"[{w}] ··· {c} ···   {t}";
+    window-format: 						"[{w}]···{c}···{t}";
     click-to-exit: 						true;
     show-match: 						false;
-    combi-hide-mode-prefix: 					false;
-    display-run: 						" ";
-    display-ssh: 						" ";
-    display-drun: 						" ";
-    display-combi: 						" ";
+    combi-hide-mode-prefix: 			false;
 }
 
-@import "colorschemes/colors.rasi" 
+@import "colorschemes/colors.rasi"
 
 * {
-    bg: #100c23;
-    fg: #aaaaee;
-    ac: #782182;
-    red: #E27878;
-    green: #A3BE8C;
-
-    background-color:             	@bg;
+    bg:								#100c23;
+    fg:								#aaaaee;
+    ac:								#782182;
+    red:							#E27878;
+    green:							#A3BE8C;
+    background-color:             				@bg;
 }
 
 window {
-    border: 						3px;
+    border: 						0px;
     border-color: 					@bg;
     border-radius: 					8px;
     padding: 						30;
@@ -132,8 +125,8 @@ element alternate.active {
 }
 
 element-text {
- background-color: inherit;
- text-color: inherit;
+	background-color: inherit;
+	text-color: inherit;
 }
 
 sidebar {

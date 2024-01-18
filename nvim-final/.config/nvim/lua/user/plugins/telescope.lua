@@ -177,7 +177,7 @@ function M.config()
     },
     pickers = {
       live_grep = {
-        theme = "dropdown",
+        -- theme = "dropdown",
       },
       grep_string = {
         theme = "dropdown",

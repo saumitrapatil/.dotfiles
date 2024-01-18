@@ -6,7 +6,7 @@ alias ns='nvim ~/.config/sxhkd/sxhkdrc'
 alias nx='nvim ~/.xinitrc'
 alias np='nvim ~/.config/nvim/lua/user/plugins.lua'
 alias n='nvim'
-alias ls='eza -al --color=always --group-directories-first' # my preferred listing
+alias ls='eza --color=always --group-directories-first' # my preferred listing
 alias la='eza -a --color=always --group-directories-first'  # all files and dirs
 alias ll='eza -l --color=always --group-directories-first'  # long format
 alias lt='eza -aT --color=always --group-directories-first' # tree listing

@@ -30,6 +30,7 @@ function M.config()
 			content_layout = "center",
 			sources = {
 				{ source = "filesystem", display_name = " 󰈔 File" },
+				{ source = "buffers", display_name = " Buffers" },
 				{ source = "git_status", display_name = "  Git" },
 			},
 		},

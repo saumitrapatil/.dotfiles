@@ -44,11 +44,6 @@ function M.config()
 	local cmp = require("cmp")
 	local luasnip = require("luasnip")
 
-	local _, cmp_clangd = pcall(require, "clangd_extensions.cmp_scores")
-	if not _ then
-		return
-	end
-
 	require("luasnip.loaders.from_vscode").lazy_load()
 
 	local check_backspace = function()
@@ -70,10 +65,10 @@ function M.config()
 		},
 		sorting = {
 			comparators = {
-				cmp.config.compare.exact,
+				-- cmp.config.compare.exact,
 				-- copilot_cmp.prioritize,
 				-- copilot_cmp.score,
-				cmp_clangd,
+				-- cmp_clangd,
 			},
 		},
 		mapping = {

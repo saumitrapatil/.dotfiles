@@ -34,7 +34,5 @@ require("null-ls").setup({
 		formatting.stylua,
 		formatting.beautysh,
 		diagnostics.zsh,
-		diagnostics.php,
-		formatting.rustfmt,
 	},
 })
