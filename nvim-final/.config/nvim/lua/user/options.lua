@@ -5,10 +5,12 @@ local options = {
 	-- Split
 	splitright = true, -- opens new files on the right side in verticle split
 	splitbelow = true, -- opens new files below the current files in horizontal split
-	-- 4 spaced indenting
+	-- indentation
 	softtabstop = 4,
 	shiftwidth = 4,
 	tabstop = 4, -- insert two spaces for a tab(4 by default)
+	smartindent = false,
+	autoindent = false,
 	-- expandtab = true,
 	-- Search
 	hlsearch = false,

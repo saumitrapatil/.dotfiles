@@ -27,12 +27,12 @@ require("null-ls").setup({
 				"markdown.mdx",
 				"graphql",
 				"handlebars",
-				"toml",
 			},
 		}),
 		formatting.black,
 		formatting.stylua,
 		formatting.beautysh,
+		formatting.taplo,
 		diagnostics.zsh,
 	},
 })
