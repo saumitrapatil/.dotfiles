@@ -6,6 +6,7 @@ alias ns='nvim ~/.config/sxhkd/sxhkdrc'
 alias nx='nvim ~/.xinitrc'
 alias np='nvim ~/.config/nvim/lua/user/plugins.lua'
 alias n='nvim'
+
 alias ls='eza --color=always --group-directories-first' # my preferred listing
 alias la='eza -a --color=always --group-directories-first'  # all files and dirs
 alias ll='eza -l --color=always --group-directories-first'  # long format
@@ -20,5 +21,7 @@ alias ffrec='~/.scripts/record-x11.sh'
 alias swsink='~/.scripts/switch-sink.sh'
 
 # git
+alias gl='git clone'
 alias gs='git status'
 alias ga='git add'
+alias gcmsg='git commit -m'

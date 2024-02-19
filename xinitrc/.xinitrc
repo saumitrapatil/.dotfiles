@@ -35,10 +35,12 @@ fi
 # Custom
 if xrandr | grep "HDMI-1-0 connected" &> /dev/null;
 then
-    xrandr --output HDMI-1-0 --primary --mode 2560x1080 --rate 100.00 --rotate normal --output eDP --mode 1920x1080 --rate 60.00 --left-of HDMI-1-0
+    # xrandr --output HDMI-1-0 --primary --mode 2560x1080 --rate 100.00 --rotate normal --output eDP --mode 1920x1080 --rate 60.00 --left-of HDMI-1-0
+    xrandr --output HDMI-1-0 --primary --mode 2560x1080 --rate 100.00 --rotate normal --output eDP --off
 elif xrandr | grep "HDMI-0 connected" &> /dev/null;
 then
-    xrandr --output HDMI-0 --primary --mode 2560x1080 --rate 100.00 --rotate normal --output eDP-1-0 --mode 1920x1080 --rate 60.00 --left-of HDMI-0
+    # xrandr --output HDMI-0 --primary --mode 2560x1080 --rate 100.00 --rotate normal --output eDP-1-0 --mode 1920x1080 --rate 60.00 --left-of HDMI-0
+    xrandr --output HDMI-0 --primary --mode 2560x1080 --rate 100.00 --rotate normal --output eDP-1-0 --off
 else
 	xrandr --auto
 fi
@@ -47,8 +49,8 @@ picom -b &
 feh --bg-fill --randomize /home/saumitra/Pictures/Wallpapers &
 
 xinput --set-prop 'ELAN1200:00 04F3:30BA Touchpad' 'libinput Tapping Enabled' 1 &
-xinput --set-prop 12 'libinput Accel Profile Enabled' 0, 1 &
-#xinput --set-prop 'Logitech Gaming Mouse G402' 'libinput Accel Profile Enabled' 0, 1 &
+# xinput --set-prop 12 'libinput Accel Profile Enabled' 0, 1 &
+xinput --set-prop 'Logitech Gaming Mouse G402' 'libinput Accel Profile Enabled' 0, 1 &
 
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 ~/dwm/scripts/bar.sh &

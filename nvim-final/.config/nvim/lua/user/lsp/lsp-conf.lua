@@ -12,6 +12,7 @@ local servers = {
 	tailwindcss = "tailwindcss-language-server",
 	docker_compose_language_service = "docker-compose-langserver",
 }
+
 for k, v in pairs(servers) do
 	if vim.fn.executable(v) == 1 then
 		lspconfig[k].setup({
