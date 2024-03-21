@@ -49,8 +49,8 @@ picom -b &
 feh --bg-fill --randomize /home/saumitra/Pictures/Wallpapers &
 
 xinput --set-prop 'ELAN1200:00 04F3:30BA Touchpad' 'libinput Tapping Enabled' 1 &
-# xinput --set-prop 12 'libinput Accel Profile Enabled' 0, 1 &
-xinput --set-prop 'Logitech Gaming Mouse G402' 'libinput Accel Profile Enabled' 0, 1 &
+xinput --set-prop 12 'libinput Accel Profile Enabled' 0, 1 &
+# xinput --set-prop 'Logitech Gaming Mouse G402' 'libinput Accel Profile Enabled' 0, 1 &
 
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 ~/dwm/scripts/bar.sh &

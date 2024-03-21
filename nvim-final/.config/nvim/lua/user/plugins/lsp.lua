@@ -20,15 +20,15 @@ return {
 	-- 		require("user.lsp.clangd")
 	-- 	end,
 	-- },
-	{
-		"Ciel-MC/rust-tools.nvim",
-		-- branch = "inline-inlay-hints",
-		ft = { "rust" },
-		lazy = true,
-		config = function()
-			require("user.lsp.rust-tools")
-		end,
-	},
+	-- {
+	-- 	"Ciel-MC/rust-tools.nvim",
+	-- 	-- branch = "inline-inlay-hints",
+	-- 	ft = { "rust" },
+	-- 	lazy = true,
+	-- 	config = function()
+	-- 		require("user.lsp.rust-tools")
+	-- 	end,
+	-- },
 	{
 		"jose-elias-alvarez/null-ls.nvim",
 		event = { "BufReadPre", "BufRead", "BufNew" },
