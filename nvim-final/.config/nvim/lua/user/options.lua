@@ -28,7 +28,7 @@ for k, v in pairs(options) do
 	vim.opt[k] = v
 end
 
-vim.cmd("setlocal spell")
-vim.cmd("set spelllang=nl,en_us")
+-- vim.cmd("setlocal spell")
+-- vim.cmd("set spelllang=nl,en_us")
 
 vim.g.cmp_toggle = true

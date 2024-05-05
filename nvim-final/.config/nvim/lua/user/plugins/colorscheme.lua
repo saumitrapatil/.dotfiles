@@ -1,27 +1,28 @@
--- return {
---     "folke/tokyonight.nvim",
---     enabled = false,
---     priority = 1000,
---     config = function()
---       vim.cmd([[colorscheme tokyonight-night]])
---     end,
--- }
-
-local M = {
-	"ellisonleao/gruvbox.nvim",
-	priority = 1000,
+return {
+  "folke/tokyonight.nvim",
+  lazy = false,
+  priority = 1000,
+    config = function()
+      vim.cmd([[colorscheme tokyonight-night]])
+    end,
+  opts = {},
 }
 
-function M.config()
-	require("gruvbox").setup({
-		overrides = {
-			SignColumn = { bg = "#282828" },
-		},
-	})
-	vim.cmd("colorscheme gruvbox")
-end
+-- local M = {
+-- 	"ellisonleao/gruvbox.nvim",
+-- 	priority = 1000,
+-- }
 
-return M
+-- function M.config()
+-- 	require("gruvbox").setup({
+-- 		overrides = {
+-- 			SignColumn = { bg = "#282828" },
+-- 		},
+-- 	})
+-- 	vim.cmd("colorscheme gruvbox")
+-- end
+
+-- return M
 
 -- return {
 -- 	"catppuccin/nvim",

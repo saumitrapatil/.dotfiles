@@ -1,6 +1,5 @@
 local M = {
 	"smoka7/hop.nvim",
-	event = "BufReadPre",
 }
 
 function M.config()

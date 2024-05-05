@@ -8,8 +8,8 @@ local servers = {
 	html = "vscode-html-language-server",
 	jsonls = "vscode-json-language-server",
 	cssls = "vscode-css-language-server",
-	tsserver = "typescript-language-server",
-	tailwindcss = "tailwindcss-language-server",
+	-- tsserver = "typescript-language-server",
+	-- tailwindcss = "tailwindcss-language-server",
 	docker_compose_language_service = "docker-compose-langserver",
 }
 

@@ -32,7 +32,6 @@ require("null-ls").setup({
 		formatting.black,
 		formatting.stylua,
 		formatting.beautysh,
-		formatting.taplo,
 		diagnostics.zsh,
 	},
 })
