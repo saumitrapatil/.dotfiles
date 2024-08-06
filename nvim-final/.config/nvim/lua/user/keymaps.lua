@@ -23,6 +23,7 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- To enter normal mode faster
 keymap("i", "kj", "<ESC>", opts)
+keymap("x", "kj", "<ESC>", opts)
 
 -- Insert --
 -- Move text up and down

@@ -11,7 +11,7 @@ export CM_MAX_CLIPS=10
 export CM_HISTLENGTH=10
 # export GDK_BACKEND=x11
 # export QT_QPA_PLATFORM=x11
-export PATH=/home/saumitra/.local/bin:/home/saumitra/.cargo/bin:/home/saumitra/bin:/home/saumitra/Applications:$PATH
+export PATH=/home/saumitra/.local/bin:/home/saumitra/.cargo/bin:/home/saumitra/bin:/home/saumitra/Applications:/home/saumitra/.spicetify:$PATH
 # export NODE_OPTIONS="--openssl-legacy-provider"
 export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
 

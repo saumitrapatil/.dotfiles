@@ -1,5 +1,6 @@
 # External Plugins
 
+sie ~/.config/zsh/catppuccin-zsh-syntax-highlighting.zsh
 sie /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 sie /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 sie /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
