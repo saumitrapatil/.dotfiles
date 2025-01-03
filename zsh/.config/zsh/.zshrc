@@ -14,6 +14,8 @@ foreach file (
   sie $ZDOTDIR/$file	
 }
 
+source /usr/share/nvm/init-nvm.sh
+
 # pnpm
 export PNPM_HOME="/home/saumitra/.local/share/pnpm"
 case ":$PATH:" in

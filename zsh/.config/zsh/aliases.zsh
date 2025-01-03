@@ -3,7 +3,7 @@ alias nz='nvim ~/.config/zsh/.zshrc'
 alias no='nvim ~/.config/zsh/options.zsh'
 alias np='nvim ~/.config/zsh/plugins.zsh'
 alias nbs='nvim ~/.config/bspwm/bspwmrc'
-alias ns='nvim ~/.config/sxhkd/sxhkdrc'
+# alias ns='nvim ~/.config/sxhkd/sxhkdrc'
 alias nx='nvim ~/.xinitrc'
 alias v='nvim'
 
@@ -15,6 +15,7 @@ alias l.='eza -a | grep -E "^\."'
 alias wp='feh --bg-fill --randomize ~/Pictures/Wallpapers'
 alias make50='make CC=clang CFLAGS="-fsanitize=signed-integer-overflow -fsanitize=undefined -ggdb3 -O0 -std=c11 -Wall -Werror -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wshadow" LDLIBS="-lcrypt -lcs50 -lm"'
 alias pwrmode='cat /sys/devices/platform/asus-nb-wmi/fan_boost_mode'
+alias paru='yay'
 
 # scripts
 alias ffrec='~/.scripts/record-x11.sh'
