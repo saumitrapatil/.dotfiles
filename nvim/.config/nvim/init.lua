@@ -1,4 +1,4 @@
 require("user.options")
-require("user.keymap")
-require("user.tokyonight")
---require("user.ayu")
+require("user.keymaps")
+require("user.lazy")
+require("user.autocommands")
