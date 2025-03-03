@@ -9,6 +9,7 @@ export CM_DEBUG=1
 export CM_OUTPUT_CLIP=0
 export CM_MAX_CLIPS=10
 export CM_HISTLENGTH=10
+export NVM_LAZY_LOAD=true
 # export GDK_BACKEND=x11
 # export QT_QPA_PLATFORM=x11
 export PATH=/home/saumitra/.local/bin:/home/saumitra/.cargo/bin:/home/saumitra/bin:/home/saumitra/Applications:/home/saumitra/.spicetify:$PATH

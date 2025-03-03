@@ -1,3 +1,4 @@
+# zmodload zsh/zprof
 # source if exist
 sie() {
   if [[ -r $1 ]]; then
@@ -41,3 +42,4 @@ unset __conda_setup
 
 eval "$(starship init zsh)"
 eval "$(fzf --zsh)"
+# zprof
