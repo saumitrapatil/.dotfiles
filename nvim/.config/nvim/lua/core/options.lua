@@ -11,4 +11,6 @@ vim.opt.scrolloff = 2
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 vim.opt.showmode = false
+vim.opt.hlsearch = false
+vim.opt.background = 'dark'
 -- vim.opt.showtabline = 2
