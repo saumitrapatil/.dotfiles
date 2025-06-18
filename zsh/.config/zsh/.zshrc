@@ -11,6 +11,7 @@ foreach file (
 	# prompt.zsh
 	aliases.zsh
 	plugins.zsh
+	zoxide.zsh
 ) {
   sie $ZDOTDIR/$file	
 }

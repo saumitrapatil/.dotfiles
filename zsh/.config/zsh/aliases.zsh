@@ -13,9 +13,8 @@ alias ll='eza -l --color=always --group-directories-first'  # long format
 alias lt='eza -aT --color=always --group-directories-first' # tree listing
 alias l.='eza -a | grep -E "^\."'
 alias wp='feh --bg-fill --randomize ~/Pictures/Wallpapers'
-alias make50='make CC=clang CFLAGS="-fsanitize=signed-integer-overflow -fsanitize=undefined -ggdb3 -O0 -std=c11 -Wall -Werror -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wshadow" LDLIBS="-lcrypt -lcs50 -lm"'
 alias pwrmode='cat /sys/devices/platform/asus-nb-wmi/fan_boost_mode'
-alias paru='yay'
+alias ff='fastfetch'
 
 # scripts
 alias ffrec='~/.scripts/record-x11.sh'

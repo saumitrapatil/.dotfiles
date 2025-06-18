@@ -116,29 +116,29 @@ return {
                 --    See `:help CursorHold` for information about when this is executed
                 --
                 -- When you move your cursor, the highlights will be cleared (the second autocommand).
-                local client = vim.lsp.get_client_by_id(event.data.client_id)
-                if client and client_supports_method(client, vim.lsp.protocol.Methods.textDocument_documentHighlight, event.buf) then
-                    local highlight_augroup = vim.api.nvim_create_augroup('kickstart-lsp-highlight', { clear = false })
-                    vim.api.nvim_create_autocmd({ 'CursorHold', 'CursorHoldI' }, {
-                        buffer = event.buf,
-                        group = highlight_augroup,
-                        callback = vim.lsp.buf.document_highlight,
-                    })
-
-                    vim.api.nvim_create_autocmd({ 'CursorMoved', 'CursorMovedI' }, {
-                        buffer = event.buf,
-                        group = highlight_augroup,
-                        callback = vim.lsp.buf.clear_references,
-                    })
-
-                    vim.api.nvim_create_autocmd('LspDetach', {
-                        group = vim.api.nvim_create_augroup('kickstart-lsp-detach', { clear = true }),
-                        callback = function(event2)
-                            vim.lsp.buf.clear_references()
-                            vim.api.nvim_clear_autocmds { group = 'kickstart-lsp-highlight', buffer = event2.buf }
-                        end,
-                    })
-                end
+                -- local client = vim.lsp.get_client_by_id(event.data.client_id)
+                -- if client and client_supports_method(client, vim.lsp.protocol.Methods.textDocument_documentHighlight, event.buf) then
+                --     local highlight_augroup = vim.api.nvim_create_augroup('kickstart-lsp-highlight', { clear = false })
+                --     vim.api.nvim_create_autocmd({ 'CursorHold', 'CursorHoldI' }, {
+                --         buffer = event.buf,
+                --         group = highlight_augroup,
+                --         callback = vim.lsp.buf.document_highlight,
+                --     })
+                --
+                --     vim.api.nvim_create_autocmd({ 'CursorMoved', 'CursorMovedI' }, {
+                --         buffer = event.buf,
+                --         group = highlight_augroup,
+                --         callback = vim.lsp.buf.clear_references,
+                --     })
+                --
+                --     vim.api.nvim_create_autocmd('LspDetach', {
+                --         group = vim.api.nvim_create_augroup('kickstart-lsp-detach', { clear = true }),
+                --         callback = function(event2)
+                --             vim.lsp.buf.clear_references()
+                --             vim.api.nvim_clear_autocmds { group = 'kickstart-lsp-highlight', buffer = event2.buf }
+                --         end,
+                --     })
+                -- end
 
                 -- The following code creates a keymap to toggle inlay hints in your
                 -- code, if the language server you are using supports them
@@ -166,20 +166,20 @@ return {
                     [vim.diagnostic.severity.HINT] = '󰌶 ',
                 },
             } or {},
-            virtual_text = true,
-            -- virtual_text = {
-            --     source = 'if_many',
-            --     spacing = 2,
-            --     format = function(diagnostic)
-            --         local diagnostic_message = {
-            --             [vim.diagnostic.severity.ERROR] = diagnostic.message,
-            --             [vim.diagnostic.severity.WARN] = diagnostic.message,
-            --             [vim.diagnostic.severity.INFO] = diagnostic.message,
-            --             [vim.diagnostic.severity.HINT] = diagnostic.message,
-            --         }
-            --         return diagnostic_message[diagnostic.severity]
-            --     end,
-            -- },
+            -- virtual_text = false,
+            virtual_text = {
+                source = 'if_many',
+                spacing = 2,
+                format = function(diagnostic)
+                    local diagnostic_message = {
+                        [vim.diagnostic.severity.ERROR] = diagnostic.message,
+                        [vim.diagnostic.severity.WARN] = diagnostic.message,
+                        [vim.diagnostic.severity.INFO] = diagnostic.message,
+                        [vim.diagnostic.severity.HINT] = diagnostic.message,
+                    }
+                    return diagnostic_message[diagnostic.severity]
+                end,
+            },
         }
 
         -- LSP servers and clients are able to communicate to each other what features they support.
@@ -212,12 +212,12 @@ return {
             -- ts_ls = {},
             --
 
-            basedpyright = {
+            pyright = {
                 -- capabilities = {},
                 settings = {
                     basedpyright = {
                         analysis = {
-                            typeCheckingMode = 'basic',
+                            typeCheckingMode = 'off',
                         },
                     },
                 },

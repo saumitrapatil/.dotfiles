@@ -31,10 +31,16 @@ return {
         { '<leader>e', '<cmd>Neotree focus toggle<cr>', desc = 'NeoTree' },
     },
     config = function()
-        vim.fn.sign_define('DiagnosticSignError', { text = ' ', texthl = 'DiagnosticSignError' })
-        vim.fn.sign_define('DiagnosticSignWarn', { text = ' ', texthl = 'DiagnosticSignWarn' })
-        vim.fn.sign_define('DiagnosticSignInfo', { text = ' ', texthl = 'DiagnosticSignInfo' })
-        vim.fn.sign_define('DiagnosticSignHint', { text = '󰌵', texthl = 'DiagnosticSignHint' })
+        vim.diagnostic.config {
+            signs = {
+                text = {
+                    [vim.diagnostic.severity.ERROR] = '',
+                    [vim.diagnostic.severity.WARN] = '',
+                    [vim.diagnostic.severity.INFO] = '',
+                    [vim.diagnostic.severity.HINT] = '󰌵',
+                },
+            },
+        }
         require('neo-tree').setup {
             close_if_last_window = true,
             popup_border_style = 'rounded',
@@ -111,7 +117,7 @@ return {
                     ['l'] = 'open',
                     ['P'] = { 'toggle_preview', config = { use_float = true } },
                     ['<esc>'] = 'revert_preview',
-                    ['h'] = 'toggle_hidden',
+                    ['<c-h>'] = 'toggle_hidden',
                     ['sh'] = 'open_split',
                     ['sv'] = 'open_vsplit',
                     ['z'] = 'close_all_nodes',
@@ -135,7 +141,7 @@ return {
                     hide_hidden = true, -- only works on Windows for hidden files/directories
                 },
                 hijack_netrw_behavior = 'open_default',
-                use_libuv_file_watcher = false,
+                use_libuv_file_watcher = true,
             },
             git_status = {
                 window = {

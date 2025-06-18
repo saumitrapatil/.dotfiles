@@ -1,5 +1,4 @@
 vim.opt.relativenumber = true
-vim.opt.clipboard = 'unnamedplus'
 vim.opt.linebreak = true
 vim.opt.mouse = 'a'
 vim.opt.termguicolors = true

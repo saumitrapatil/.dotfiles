@@ -16,8 +16,12 @@ return {
     opts = {
         formatters_by_ft = {
             lua = { 'stylua' },
-            python = { 'ruff' },
+            go = { 'gofmt' },
+            -- python = { 'ruff' },
             javascript = { 'prettierd', stop_after_first = true },
+            javascriptreact = { 'prettierd', stop_after_first = true },
+            typescript = { 'prettierd', stop_after_first = true },
+            typescriptreact = { 'prettierd', stop_after_first = true },
         },
     },
     -- config = function()
