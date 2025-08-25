@@ -16,9 +16,6 @@ foreach file (
   sie $ZDOTDIR/$file	
 }
 
-# uncomment the below line if nvm installed via AUR
-# source /usr/share/nvm/init-nvm.sh
-
 # pnpm
 export PNPM_HOME="/home/saumitra/.local/share/pnpm"
 case ":$PATH:" in
