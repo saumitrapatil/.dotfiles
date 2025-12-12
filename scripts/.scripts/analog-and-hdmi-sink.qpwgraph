@@ -1,0 +1,14 @@
+<!DOCTYPE patchbay>
+<patchbay name="analog-and-hdmi-sink" version="0.9.7">
+ <items>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="spotify" port="spotify:output_FL"/>
+   <input node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALC233 Analog:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="spotify" port="spotify:output_FR"/>
+   <input node="Family 17h/19h/1ah HD Audio Controller Analog Stereo" port="ALC233 Analog:playback_FR"/>
+  </item>
+ </items>
+</patchbay>
+

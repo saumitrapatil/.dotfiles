@@ -49,6 +49,7 @@ picom -b &
 feh --bg-fill --randomize /home/saumitra/Pictures/Wallpapers &
 
 xinput --set-prop 'ELAN1200:00 04F3:30BA Touchpad' 'libinput Tapping Enabled' 1 &
+xinput --set-prop 'pointer:Logitech USB Receiver Mouse' 'libinput Accel Profile Enabled' 0, 1 &
 setxkbmap -option caps:escape
 # xinput --set-prop 'pointer:Razer Razer Viper 8KHz' 'libinput Accel Profile Enabled' 0, 1 &
 # setxkbmap -layout us,us -variant ,dvorak -option grp:alt_shift_toggle

@@ -31,5 +31,6 @@ require('lazy').setup {
     require 'plugins.aerial',
     require 'plugins.undotree',
     require 'plugins.diffview',
-    require 'plugins.cord',
+    -- require 'plugins.cord',
+    require 'plugins.terminal',
 }
